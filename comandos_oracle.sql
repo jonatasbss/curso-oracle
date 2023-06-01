@@ -84,3 +84,10 @@ FROM   employees;
 
 SELECT department_name || q'[Department's Manager ID: ]'' || manager_id "Departamento e Gerente"
 FROM departments;
+
+
+-- Linhas Duplicadas
+
+SELECT DISTINCT department_id FROM employees;
+
+SELECT DISTINCT first_name, last_name FROM employees;
